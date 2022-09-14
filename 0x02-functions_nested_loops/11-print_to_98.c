@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * print_to_98 - Print all natural numbers in order separated 
+ * print_to_98 - Print all natural numbers in order separated
  * by a comma followed by a space.
  * @n: The number to begin counting at.
  */
