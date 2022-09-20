@@ -3,7 +3,7 @@
 /**
  * _strcpy - copy paste string
  * @dest: Destination
- * @scr: source
+ * @src: source
  *
  * Return: destination
  */
