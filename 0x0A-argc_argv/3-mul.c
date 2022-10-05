@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - program that prints its name, followed by a new line
  * @argc: argument that contains argument input
@@ -20,5 +19,5 @@ int main(int argc, char *argv[])
 		mul = num_1 * num_2;
 		printf("%d\n", mul);
 	}
-	Return(0);
+	return (0);
 }
