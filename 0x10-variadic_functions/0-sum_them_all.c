@@ -2,8 +2,9 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - sums of all its parameters
+ * sum_them_all - sums of all its parameters.
  * @n: number of parameters
+ *
  * Return: sum of all parameters
  */
 int sum_them_all(const unsigned int n, ...)
