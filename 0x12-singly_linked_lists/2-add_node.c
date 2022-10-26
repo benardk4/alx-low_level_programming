@@ -25,6 +25,7 @@ list_t *add_node(list_t **head, const char *str)
 	*head = new_node;
 	return (new_node);
 }
+
 /**
  * _strlen - counts the length of a string
  * @str: string to be counted
