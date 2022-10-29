@@ -1,46 +1,21 @@
-#include <stddef.h>
-#include "main.h"
+#include "lists.h"
+#include <stdio.h>
 
 /**
- * check_valid_string - checks if a string has only 0's and 1's
- * @b: string to be checked
- * Return: 1 if string is valid, 0 otherwise
- */
-int check_valid_string(const char *b)
-{
-	if (b == NULL)
-		return (0);
-	while (*b)
-	{
-		if (*b != '1' && *b != '0')
-			return (0);
-		b++;
-	}
-
-	return (1);
-}
-
-/**
- * binary_to_uint - converts a binary to an unsigned int
- * @b: the binary number as a string
+ * print_listint -  prints all the elements of a listint_t list.
+ * @h: list to print
  *
- * Return: the converted value
+ * Return: number of elements in the list
  */
-unsigned int binary_to_uint(const char *b)
+size_t print_listint(const listint_t *h)
 {
-	unsigned int decimal = 0;
-	int str_len = 0, base = 1;
+	size_t count = 0;
 
-	if (!check_valid_string(b))
-		return (0);
-	while (b[str_len] != '\0')
-		str_len++;
-	while (str_len)
+	while (h != NULL)
 	{
-		decimal += ((b[str_len - 1] - '0') * base);
-		base *= 2;
-		str_len--;
+		printf("%d\n", h->n);
+		h = h->next;
+		count++;
 	}
-
-	return (decimal);
+	return (count);
 }
