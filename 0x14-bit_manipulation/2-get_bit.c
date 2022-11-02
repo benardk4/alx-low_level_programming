@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * grt_bit - gets the value of a bit at a given index.
+ * get_bit - gets the value of a bit at a given index.
  * @n: The bit.
  * @index: The index to get the value at - indices start at 0.
  *
